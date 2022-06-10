@@ -227,14 +227,15 @@ body{
 #playername input{
 padding: 8px;
 width: 70%;
-margin-top: 15px;
+margin-top: 35px;
 border: 2px solid black;
 font-weight: 600;
 font-size: 18px;
 }
 
 #começar{
-    margin-top: 15px;
+    margin-top: 35px;
+    width: 70%
 }
 
 

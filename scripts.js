@@ -403,6 +403,9 @@ createtamplate()
 }
 
 function resetgame(){
+    
+window.scrollTo(0, 0)    
+    
 pergunta.innerHTML = `<h1>${quizes[i].pergunta}</h1>`
 resposta1.innerText = quizes[i].primeiraresposta
 resposta2.innerHTML = `<span>${quizes[i].segundaresposta}<span>`

@@ -74,7 +74,7 @@ let quizes = [
     pergunta: "Todas as doenças hereditárias são genéticas, mas nem todas as doenças genéticas são hereditárias. Deu um nó no cérebro? Então seleciona a única opção que mostra apenas doenças genéticas:",
     primeiraresposta: "Obesidade e fibrose cística",
     segundaresposta: "Síndrome de Down e albinismo",
-    terceiraresposta: "Diabetes e polidactilia;",
+    terceiraresposta: "Diabetes e polidactilia",
     quartaresposta: "Hipertensão e Alzheimer",
     respostacerta: "Síndrome de Down e albinismo"
 
@@ -178,11 +178,11 @@ function finishevent(){
 
     if(pts <= 4){
     
-    nivel.innerHTML = "Guilherme Machado"
+    nivel.innerHTML = "Não sabe o que é sindrome metabolica"
     
     }else if(pts >4 & pts <= 6){
 
-    nivel.innerHTML = "joga de neeko sem bolinha"
+    nivel.innerHTML = "Não chama o Kaio pra um rolê"
 
     }else if(pts >6 & pts <= 9){
 
@@ -190,7 +190,7 @@ nivel.innerHTML = "Faz medicina na UFRGS"
 
 }else if(pts == 10){
 
-nivel.innerText = " O nome começa com Kaio e termina com Trajano"
+nivel.innerText = "Sabe o que é sindrome metabolica"
 
 
 
@@ -403,9 +403,9 @@ createtamplate()
 }
 
 function resetgame(){
-    
-window.scrollTo(0, 0)    
-    
+
+window.scrollTo(0, 0)
+
 pergunta.innerHTML = `<h1>${quizes[i].pergunta}</h1>`
 resposta1.innerText = quizes[i].primeiraresposta
 resposta2.innerHTML = `<span>${quizes[i].segundaresposta}<span>`

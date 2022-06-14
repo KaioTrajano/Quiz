@@ -15,9 +15,6 @@ let playernameinp = document.getElementById("playernameinput")
 let começar = document.getElementById("começar")
 let nameplayer = document.getElementById("name")
 
-
-
-
 quadrodeperguntas.style.display = "none"
 
 
@@ -49,13 +46,7 @@ alternativespan.textContent = "A"
 alternativespan.classList.add("alternative")
 resposta1.appendChild(alternativespan)
 
-
-
-
 }
-
-
-
 
 
 let quizes = [
@@ -159,6 +150,16 @@ let quizes = [
     quartaresposta: "Hugo", 
     respostacerta: "Kaio Trajano", 
           
+},
+
+{
+    pergunta: "O QUE É SINDROME METABOLICA?",
+    primeiraresposta: "NÃO SEI ;-;",
+    segundaresposta: "ALGUMA SINDROME QUE ATINGE METAIS",
+    terceiraresposta: "SEI LÁ, PERGUNTA PRO GUILHERME MACHADO",
+    quartaresposta: "NÃO ESTUDEI", 
+    respostacerta: "SEI LÁ, PERGUNTA PRO GUILHERME MACHADO",
+          
 }
 
 
@@ -168,10 +169,8 @@ let quizes = [
 ]
 
 
-
-
-
 let i = 0
+
 
 
 function finishevent(){
@@ -192,9 +191,8 @@ nivel.innerHTML = "Faz medicina na UFRGS"
 
 nivel.innerText = "Sabe o que é sindrome metabolica"
 
-
-
 }
+
 
 nameplayer.innerText = playernameinp.value
 
@@ -222,108 +220,54 @@ resposta4.innerHTML += quizes[i].quartaresposta
 
 
 
+function verificarresposta(resposta, letra){
+
+quadrodeperguntas.style.pointerEvents = "none"
+
+
+if(resposta.textContent == quizes[i].respostacerta + `${letra}`){
+        
+
+    resposta.style.backgroundColor = "greenyellow"
+    quadrodeperguntas.classList.add("reset")
+
+       setTimeout(() => {
+       acertou()
+}, "2000")
+
+   }else{
+       resposta.style.backgroundColor = "rgb(243, 82, 82)"
+       quadrodeperguntas.classList.add("shakeerror")
+        setTimeout(() => {
+        errou()
+        }, "2000")
+        }
+}
 
 
 resposta1.addEventListener("click", () =>{
 
-    quadrodeperguntas.style.pointerEvents = "none"
-
-
-    if(resposta1.textContent == quizes[i].respostacerta + "A"){
-        
-
-     resposta1.style.backgroundColor = "greenyellow"
-
-        setTimeout(() => {
-        acertou()
-}, "2000")
-
-    }else{
-        resposta1.style.backgroundColor = "rgb(243, 82, 82)"
-        
-        
-
-setTimeout(() => {
-errou()
-}, "2000")
-    }
-
+verificarresposta(resposta1, "A")
 
 })
 
 resposta2.addEventListener("click", () =>{
 
-    quadrodeperguntas.style.pointerEvents = "none"
-
-    if(resposta2.textContent == quizes[i].respostacerta + "B"){
-        
-
-     resposta2.style.backgroundColor = "greenyellow"
-
-        setTimeout(() => {
-        acertou()
-}, "2000")
-
-    }else{
-        resposta2.style.backgroundColor = "rgb(243, 82, 82)"
-
-    setTimeout(() => {
-    errou()
-}, "2000")
-    }
-
-
+    verificarresposta(resposta2, "B")
 })
 
 resposta3.addEventListener("click", () =>{
 
-    quadrodeperguntas.style.pointerEvents = "none"
-
-    if(resposta3.textContent == quizes[i].respostacerta + "C"){
-        
-
-     resposta3.style.backgroundColor = "greenyellow"
-
-        setTimeout(() => {
-        acertou()
-}, "2000")
-
-    }else{
-        resposta3.style.backgroundColor = "rgb(243, 82, 82)"
-       
-
-setTimeout(() => {
-errou()
-}, "2000")
-    }
-
-
+    verificarresposta(resposta3, "C")
 })
 
 resposta4.addEventListener("click", () =>{
 
-
-    quadrodeperguntas.style.pointerEvents = "none"
-
-    if(resposta4.textContent ==  quizes[i].respostacerta + "D"){
-        
-
-     resposta4.style.backgroundColor = "greenyellow"
-
-        setTimeout(() => {
-        acertou()
-}, "2000")
-
-    }else{
-        resposta4.style.backgroundColor = "rgb(243, 82, 82)"
-
-setTimeout(() => {
-errou()
-}, "2000")
-    }
-
+    verificarresposta(resposta4, "D")
 
 })
+
+
 
 function jogarnovamente(){
 
@@ -341,6 +285,11 @@ pts = 0
  i = 0
  resetgame()
  createtamplate()
+
+ resposta1.classList.remove("resposta11")
+ resposta2.classList.remove("resposta11")
+ resposta3.classList.remove("resposta11")
+ resposta4.classList.remove("resposta11")
 
 
 }
@@ -377,8 +326,7 @@ createtamplate()
 
 function errou(){
 
-    
-    
+
 resetgame() 
    
 i++
@@ -416,10 +364,20 @@ resposta2.style.backgroundColor = ""
 resposta3.style.backgroundColor = ""
 resposta4.style.backgroundColor = ""
 quadrodeperguntas.style.pointerEvents = ""
+quadrodeperguntas.classList.remove("shakeerror")
+quadrodeperguntas.classList.remove("reset")
 npergunta.innerText = i+1
 
+if(i == 10){
+    resposta1.classList.add("resposta11")
+    resposta2.classList.add("resposta11")
+    resposta3.classList.add("resposta11")
+    resposta4.classList.add("resposta11")
+    
 }
 
+
+}
 
 
 createtamplate()

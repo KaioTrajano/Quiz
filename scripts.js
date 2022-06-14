@@ -18,6 +18,7 @@ let nameplayer = document.getElementById("name")
 quadrodeperguntas.style.display = "none"
 
 playernameinp.focus()
+playernameinp.click()
 
 jogardenovo.addEventListener("click", jogarnovamente)
 começar.addEventListener("click", jogarnovamente)

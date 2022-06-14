@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #439CEF;
     user-select: none;
+  
     
    
 }
@@ -25,6 +26,10 @@ footer{
   
 }
 
+.reset{
+    animation: reset;
+}
+
 
 .resposta{
     margin-top: 15px;
@@ -43,6 +48,10 @@ footer{
     box-shadow: 1px 0px 15px 2px #0836C1;
     
     
+}
+
+.resposta:hover{
+    background-color: rgb(216, 216, 216);
 }
 
 .resposta:nth-child(2){
@@ -69,8 +78,8 @@ footer{
     height: 150px;
     border-radius: 100%;
     background-color: white;
-    position: absolute;
-    top: 100px;
+    margin-bottom: -45px;
+    z-index: 1;
     left: 45%;
     text-align: center;
     vertical-align: middle;
@@ -81,6 +90,31 @@ footer{
     box-shadow: 0px -9px 2px 1px #1f1f1f;
     animation: nperguntasanimation 1s forwards;
 }
+
+.shakeerror{
+
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+
+  }
+  
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 
 #perfunta h1{
    
@@ -162,11 +196,6 @@ footer{
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 
-}
-
-#finish{
-    width: 90%;
-    
 }
 
 
@@ -254,6 +283,11 @@ font-size: 18px;
     width: 75%;
 }
 
+.resposta11{
+    font-size: 12px;
+    line-height: 27px;;
+}
+
 
 @keyframes nperguntasanimation {
   from { left: -100%;}
@@ -262,16 +296,21 @@ font-size: 18px;
 
 
 
-@media (max-width: 475px ){
+@media (max-width: 483px ){
 
 
+    #finish{
+        width: 90%;
+        
+        
+    }
     
 
     .resposta{
     margin-top: 15px;
-    width: 98%;
+    width: 99%;
     height: 61px;
-    font-size: 18px;
+    font-size: calc(0.55em + 1vmin);
     border-top: 4px solid rgb(5, 145, 238) ;
     background-color: white;
     color: black;
@@ -341,14 +380,13 @@ font-size: 18px;
 
 }
 
-@media (max-width: 355px ){
+@media (max-width: 412px ){
 
 
 .resposta{
 margin-top: 15px;
 width: 98%;
 height: 61px;
-font-size: 12px;
 border-top: 4px solid rgb(5, 145, 238) ;
 background-color: white;
 color: black;
@@ -365,4 +403,28 @@ line-height: 30px;
 }
 
 
+}
+
+@media (max-width: 330px ){
+
+
+    .resposta{
+    margin-top: 15px;
+    font-size: calc(0.45em + 1vmin);
+    width: 98%;
+    height: 61px;
+    border-top: 4px solid rgb(5, 145, 238) ;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 1px 0px 15px 2px #0836C1;
+    line-height: 30px;
+    }
+    
+    
 }

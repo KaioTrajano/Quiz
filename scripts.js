@@ -23,6 +23,8 @@ playernameinp.click()
 jogardenovo.addEventListener("click", jogarnovamente)
 começar.addEventListener("click", jogarnovamente)
 
+
+
 function createtamplate(){
 
 let alternativespan4 = document.createElement("span")
@@ -47,6 +49,7 @@ alternativespan.classList.add("alternative")
 resposta1.appendChild(alternativespan)
 
 }
+
 
 let quizes = [
 
@@ -159,9 +162,18 @@ let quizes = [
     quartaresposta: "NÃO ESTUDEI KKKKJ", 
     respostacerta: "SEI LÁ, PERGUNTA PRO GUILHERME MACHADO",
           
-}]
+}
+
+
+
+
+
+]
+
 
 let i = 0
+
+
 
 function finishevent(){
 
@@ -183,6 +195,7 @@ nivel.innerText = "Sabe o que é sindrome metabolica"
 
 }
 
+
 nameplayer.innerText = playernameinp.value
 
 
@@ -198,11 +211,16 @@ resetgame()
 
 }
 
+
+
 pergunta.innerHTML = `<h1>${quizes[i].pergunta}</h1>`
 resposta1.innerHTML += quizes[i].primeiraresposta
 resposta2.innerHTML += quizes[i].segundaresposta
 resposta3.innerHTML += quizes[i].terceiraresposta
 resposta4.innerHTML += quizes[i].quartaresposta
+
+
+
 
 function verificarresposta(resposta, letra){
 
@@ -228,6 +246,7 @@ if(resposta.textContent == quizes[i].respostacerta + `${letra}`){
         }
 }
 
+
 resposta1.addEventListener("click", () =>{
 
 verificarresposta(resposta1, "A")
@@ -249,6 +268,8 @@ resposta4.addEventListener("click", () =>{
     verificarresposta(resposta4, "D")
 
 })
+
+
 
 function jogarnovamente(){
 
@@ -275,11 +296,15 @@ pts = 0
 
 }
 
+
 let pts = 0
+
 
 function acertou(){
 
+  
 resetgame()
+
 
 i++
 pts += 1
@@ -333,7 +358,7 @@ window.scrollTo(0, 0)
 
 pergunta.innerHTML = `<h1>${quizes[i].pergunta}</h1>`
 resposta1.innerText = quizes[i].primeiraresposta
-resposta2.innerHTML = `<span>${quizes[i].segundaresposta}<span>`
+resposta2.innerHTML = quizes[i].segundaresposta
 resposta3.innerText = quizes[i].terceiraresposta
 resposta4.innerText = quizes[i].quartaresposta
 resposta1.style.backgroundColor = ""
@@ -353,7 +378,10 @@ if(i == 10){
     npergunta.innerText = "???"
     
 }
+
+
 }
+
 
 createtamplate()
 

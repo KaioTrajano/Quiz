@@ -50,6 +50,10 @@ footer{
     
 }
 
+.resposta:hover{
+    background-color: rgb(216, 216, 216);
+}
+
 .resposta:nth-child(2){
    
 
@@ -222,18 +226,21 @@ button{
 }
 
 .jogardenovo{
-    border: none;
-    padding: 8px;
+    border: 2px solid black;
+    padding: 14px;
     background-color:rgb(5, 145, 238) ;
     color: white;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 0px;
+    margin-left: -2px;
+    
     
 }
 
 .jogardenovo:hover{
-    background-color: rgb(12, 112, 179) ;
+
 }
 
 .n{
@@ -250,11 +257,10 @@ button{
     width: 350px;
     height: 250px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
+    
    
     
 }
@@ -265,18 +271,36 @@ button{
 }
 
 
+
+.roww{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 35px;
+}
+
+
 #playername input{
-padding: 8px;
+padding: 15px;
 width: 70%;
 margin-top: 35px;
 border: 2px solid black;
 font-weight: 600;
 font-size: 18px;
+border-radius: 0px;
 }
+
+#playername ct:focus{
+     outline: none;
+    }
 
 #começar{
     margin-top: 35px;
-    width: 75%;
+    width: 25%;
 }
 
 .resposta11{

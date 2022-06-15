@@ -2,6 +2,7 @@ body{
     font-family: "Poppins";
     background-color: #439CEF;
     user-select: none;
+    overflow-x: hidden;
   
     
    
@@ -268,15 +269,20 @@ button{
     justify-content: center;
     align-items: center;
     position: absolute;
-    
    
-    
 }
 
 .playernameoff{
    
-    visibility: hidden;
+    animation: playernameanimation 2s forwards;
 }
+
+
+@keyframes playernameanimation {
+    0% { left: 50%; top: 50%;}
+    50% { left: 150%; top: 50%; visibility: hidden;}
+    100% {visibility: hidden;}
+  }
 
 
 
@@ -314,13 +320,17 @@ border-radius: 0px;
 
 .resposta11{
     font-size: 12px;
-    line-height: 27px;;
+    line-height: 32px;
 }
 
 
 @keyframes nperguntasanimation {
   from { left: -100%;}
   to { left: 45%;}
+}
+
+#finish{
+    min-height: 700px;
 }
 
 
@@ -330,8 +340,7 @@ border-radius: 0px;
 
     #finish{
         width: 90%;
-        
-        
+
     }
     
 
@@ -409,7 +418,11 @@ border-radius: 0px;
 
 }
 
-@media (max-width: 412px ){
+@media (max-width: 414px ){
+
+    #finish{
+        min-height: 850px;
+    }   
 
 
 .resposta{

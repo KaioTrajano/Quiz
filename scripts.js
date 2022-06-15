@@ -187,27 +187,27 @@ function finishevent(){
 
     }else if(pts >6 & pts <= 9){
 
-nivel.innerHTML = "Faz medicina na UFRGS"
+    nivel.innerHTML = "Faz medicina na UFRGS"
 
-}else if(pts == 10){
+    }else if(pts >= 10){
 
-nivel.innerText = "Sabe o que é sindrome metabolica"
+    nivel.innerText = "Sabe o que é sindrome metabolica"
 
-}
+    }
+
+    
+    nameplayer.innerText = playernameinp.value
 
 
-nameplayer.innerText = playernameinp.value
+    quadrodeperguntas.style.display = "none"
 
+    finish.classList.remove("finishoff")
+    finish.classList.add("finishon")
+    pontos.innerText = `${pts}/11`
 
-quadrodeperguntas.style.display = "none"
+    nivel.innerText += 
 
-finish.classList.remove("finishoff")
-finish.classList.add("finishon")
-pontos.innerText = `${pts}/10`
-
-nivel.innerText += 
-
-resetgame()
+    resetgame()
 
 }
 
@@ -277,12 +277,21 @@ if(playernameinp.value ==""){
     return
 }
 
-quadrodeperguntas.style.display = ""
 
-finish.classList.add("finishoff")
-playername.classList.remove("finishon")
-finish.classList.remove("finishon")
+
 playername.classList.add("playernameoff")
+
+setTimeout(() => {
+    quadrodeperguntas.style.display = ""
+    playername.classList.remove("finishon")
+
+  }, "500")
+
+
+  finish.classList.add("finishoff")
+
+  finish.classList.remove("finishon")
+
 pts = 0
  i = 0
  resetgame()

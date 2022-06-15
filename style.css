@@ -193,7 +193,7 @@ footer{
     background-color: white;
     position: absolute;
     display: block;
-    top: 90%;  /* position the top  edge of the element at the middle of the parent */
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     box-shadow: 1px 1px 25px rgb(54, 54, 54);

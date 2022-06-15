@@ -420,11 +420,6 @@ border-radius: 0px;
 
 @media (max-width: 414px ){
 
-    #finish{
-        min-height: 850px;
-    }   
-
-
 .resposta{
 margin-top: 15px;
 width: 98%;

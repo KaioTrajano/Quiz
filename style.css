@@ -331,6 +331,7 @@ border-radius: 0px;
 
 #finish{
     height: 700px;
+    padding: 5px;
 }
 
 
@@ -340,6 +341,9 @@ border-radius: 0px;
 
     #finish{
         width: 90%;
+        font-size: 25px;
+        height: 500px;
+        
 
     }
     
@@ -420,11 +424,7 @@ border-radius: 0px;
 
 @media (max-width: 414px ){
 
-    #finish{
-        height: 850px;
-    }   
-
-
+  
 .resposta{
 margin-top: 15px;
 width: 98%;
@@ -449,6 +449,13 @@ line-height: 30px;
 
 @media (max-width: 330px ){
 
+    #finish{
+        width: 90%;
+        font-size: 22px;
+        height: 500px;
+        
+
+    }
 
     .resposta{
     margin-top: 15px;

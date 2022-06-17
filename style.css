@@ -330,7 +330,7 @@ border-radius: 0px;
 }
 
 #finish{
-    min-height: 700px;
+    height: 700px;
 }
 
 
@@ -419,6 +419,11 @@ border-radius: 0px;
 }
 
 @media (max-width: 414px ){
+
+    #finish{
+        height: 850px;
+    }   
+
 
 .resposta{
 margin-top: 15px;

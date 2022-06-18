@@ -10,7 +10,7 @@ body{
 
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins-Medium.ttf");
+    src: url("/Poppins/Poppins-Medium.ttf");
     }
 
 footer{
@@ -305,7 +305,8 @@ margin-top: 35px;
 border: 2px solid black;
 font-weight: 600;
 font-size: 18px;
-border-radius: 0px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
 }
 
 #playername ct:focus{
@@ -316,6 +317,8 @@ border-radius: 0px;
     margin-top: 35px;
     width: 25%;
     border: 2px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .resposta11{

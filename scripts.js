@@ -179,7 +179,7 @@ function finishevent(){
 
     if(pts <= 4){
     
-    nivel.innerHTML = "Não sabe o que é sindrome metabolica"
+    nivel.innerHTML = "Precisa estudar mais"
     
     }else if(pts >4 & pts <= 6){
 
@@ -191,7 +191,7 @@ function finishevent(){
 
     }else if(pts >= 10){
 
-    nivel.innerText = "Sabe o que é sindrome metabolica"
+    nivel.innerText = "Um pouco abaixo de quem criou esse quiz"
 
     }
 

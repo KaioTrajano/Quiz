@@ -5,10 +5,6 @@ body{
     font-family:Arial, sans-serif ;
 }
   
-    
-   
-}
-
 @font-face {
     font-family: "Poppins";
     src: url("/Poppins/Poppins-Medium.ttf");
@@ -78,6 +74,7 @@ footer{
     margin-bottom: 150px;
     box-shadow: 1px -1px 15px #1f1f1f;
     font-size: 12px;
+    margin-top: 50px;
 
 }
 
@@ -86,9 +83,10 @@ footer{
 .npergunta{
     width: 150px;
     height: 150px;
+    margin-top: 50px;
     border-radius: 100%;
     background-color: white;
-    margin-bottom: -45px;
+    margin-bottom: -85px;
     z-index: 1;
     left: 45%;
     text-align: center;
@@ -99,6 +97,7 @@ footer{
     padding: 5px;
     box-shadow: 0px -9px 2px 1px #1f1f1f;
     animation: nperguntasanimation 1s forwards;
+  
 }
 
 .shakeerror{
@@ -190,7 +189,7 @@ footer{
 
 .finishon{
     width: 400px;
-    height: 600px;
+    height: 200px;
     background-color: white;
     position: absolute;
     display: block;
@@ -339,16 +338,62 @@ border-bottom-left-radius: 5px;
 }
 
 
+.bardiv{
+    height: 20px;
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    z-index: 3;
+    margin-top: 50px;
+    visibility: hidden;
+    border: 2px solid black;
+    overflow: hidden;
+  
+    
+}
+
+.bar{
+    height: 20px;
+    width: 0px;
+    background-color: rgb(239, 60, 255);
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#finish{
+        width: 50%;
+        font-size: 25px;
+        height: 400px;
+    }
+
+.porcentagem{
+ float: right;
+ padding-right: 5px;
+ padding-top: 1px;
+ font-weight: 600;
+ color: white;
+ text-shadow: 1px 1px black;
+
+}
+
 
 @media (max-width: 483px ){
 
+    .bardiv{
+
+    width: 80%;
+    position: fixed;
+    margin-top: -50px;
+    margin-left: 7%;
+  
+    
+}
 
     #finish{
         width: 90%;
         font-size: 25px;
         height: 500px;
-        
-
     }
     
 

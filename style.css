@@ -356,7 +356,7 @@ border-bottom-left-radius: 5px;
 .bar{
     height: 20px;
     width: 0px;
-    background-color: rgb(239, 60, 255);
+    background-color: rgb(0,250,154);
     border-radius: 15px;
     transition: 1s;
 }

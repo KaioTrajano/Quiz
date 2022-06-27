@@ -384,15 +384,15 @@ nivel.innerHTML = "Precisa estudar mais"
 
 }else if(pts >4 & pts <= 6){
 
-nivel.innerHTML = "Não chama o Kaio pra um rolê"
+nivel.innerHTML = "Foi quase..."
 
 }else if(pts >6 & pts <= 9){
 
-nivel.innerHTML = "Faz medicina na UFRGS"
+nivel.innerHTML = "Tem jeito pra isso :)"
 
 }else if(pts >= 10){
 
-nivel.innerText = "Um pouco abaixo de quem criou esse quiz"
+nivel.innerText = "Posso te chamar de Dr`${playername}?`"
 
 }
 

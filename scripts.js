@@ -392,7 +392,7 @@ nivel.innerHTML = "Tem jeito pra isso :)"
 
 }else if(pts >= 10){
 
-nivel.innerText = "Posso te chamar de Dr`${playernameinput.value}?`"
+nivel.innerText = "Posso te chamar de Dr`${playernameinp.value}?`"
 
 }
 

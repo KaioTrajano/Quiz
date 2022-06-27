@@ -14,6 +14,10 @@ let playername = document.getElementById("playername")
 let playernameinp = document.getElementById("playernameinput")
 let começar = document.getElementById("começar")
 let nameplayer = document.getElementById("name")
+let bar = document.getElementById("bar")
+let bardiv = document.getElementById("bardiv")
+let porcentagem = document.getElementById("porcentagem")
+
 
 quadrodeperguntas.style.display = "none"
 
@@ -154,64 +158,11 @@ let quizes = [
           
 },
 
-{
-    pergunta: "O QUE É SINDROME METABOLICA?",
-    primeiraresposta: "NÃO SEI ;-;",
-    segundaresposta: "ALGUMA SINDROME QUE ATINGE METAIS",
-    terceiraresposta: "SEI LÁ, PERGUNTA PRO GUILHERME MACHADO",
-    quartaresposta: "NÃO ESTUDEI KKKKJ", 
-    respostacerta: "SEI LÁ, PERGUNTA PRO GUILHERME MACHADO",
-          
-}
-
-
-
-
-
 ]
 
 
 let i = 0
-
-
-
-function finishevent(){
-
-    if(pts <= 4){
-    
-    nivel.innerHTML = "Precisa estudar mais"
-    
-    }else if(pts >4 & pts <= 6){
-
-    nivel.innerHTML = "Não chama o Kaio pra um rolê"
-
-    }else if(pts >6 & pts <= 9){
-
-    nivel.innerHTML = "Faz medicina na UFRGS"
-
-    }else if(pts >= 10){
-
-    nivel.innerText = "Um pouco abaixo de quem criou esse quiz"
-
-    }
-
-    
-    nameplayer.innerText = playernameinp.value
-
-
-    quadrodeperguntas.style.display = "none"
-
-    finish.classList.remove("finishoff")
-    finish.classList.add("finishon")
-    pontos.innerText = `${pts}/11`
-
-    nivel.innerText += 
-
-    resetgame()
-
-}
-
-
+let progresso = 0
 
 pergunta.innerHTML = `<h1>${quizes[i].pergunta}</h1>`
 resposta1.innerHTML += quizes[i].primeiraresposta
@@ -273,6 +224,14 @@ resposta4.addEventListener("click", () =>{
 
 function jogarnovamente(){
 
+
+bardiv.style.visibility = "visible"
+
+bar.setAttribute("style", "width: 0%")
+progresso = 0
+
+
+
 if(playernameinp.value ==""){
     return
 }
@@ -311,6 +270,10 @@ let pts = 0
 
 function acertou(){
 
+progresso += 10
+
+
+bar.setAttribute("style", "width:" + progresso + "%")
   
 resetgame()
 
@@ -337,6 +300,10 @@ createtamplate()
 
 function errou(){
 
+progresso += 10
+
+
+bar.setAttribute("style", "width:" + progresso + "%")
 
 resetgame() 
    
@@ -361,9 +328,31 @@ createtamplate()
 
 }
 
+
+
 function resetgame(){
 
+bar.style.display = "block"
+
 window.scrollTo(0, 0)
+
+function animateValue(obj, start, end, duration) {
+    
+  let startTimestamp = null;
+
+  const step = (timestamp) => {
+
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start) + "%";
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+animateValue(porcentagem, progresso - 10, progresso, 500);
 
 pergunta.innerHTML = `<h1>${quizes[i].pergunta}</h1>`
 resposta1.innerText = quizes[i].primeiraresposta
@@ -379,19 +368,46 @@ quadrodeperguntas.classList.remove("shakeerror")
 quadrodeperguntas.classList.remove("reset")
 npergunta.innerText = i+1
 
-if(i == 10){
-    resposta1.classList.add("resposta11")
-    resposta2.classList.add("resposta11")
-    resposta3.classList.add("resposta11")
-    resposta4.classList.add("resposta11")
-    npergunta.innerText = "???"
-    
-}
-
-
 }
 
 
 createtamplate()
 
 npergunta.innerText = i+1
+
+function finishevent(){
+
+
+if(pts <= 4){
+
+nivel.innerHTML = "Precisa estudar mais"
+
+}else if(pts >4 & pts <= 6){
+
+nivel.innerHTML = "Não chama o Kaio pra um rolê"
+
+}else if(pts >6 & pts <= 9){
+
+nivel.innerHTML = "Faz medicina na UFRGS"
+
+}else if(pts >= 10){
+
+nivel.innerText = "Um pouco abaixo de quem criou esse quiz"
+
+}
+
+
+nameplayer.innerText = playernameinp.value
+
+
+quadrodeperguntas.style.display = "none"
+
+finish.classList.remove("finishoff")
+finish.classList.add("finishon")
+pontos.innerText = `${pts}/11`
+
+nivel.innerText += 
+
+resetgame()
+
+}

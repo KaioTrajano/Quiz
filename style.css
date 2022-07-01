@@ -558,7 +558,7 @@ animation: nperguntasanimation 2s forwards;
     
 .quadrodequizes{
 
-top: 120%;
+top: 150%;
 grid-template-columns: 550px 550px;
 gap: 100px;
 }

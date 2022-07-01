@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/95442199ab.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 body{
@@ -742,22 +754,23 @@ top: 120%;
 
 .quadrodequizes{
 
-grid-template-columns: 250px;
+grid-template-columns: 80vw;
 gap: 50px;
-top: 70%;
+top: 90%;
 
 
 }
 
 .selectquiz{
-   left: 50px;
-   
+   left: 24vw;
+   width: 30vw;
+   font-size: 4vw;
 }
 
 
 .quizes{
-width: 250px;
-height: 330px;
+width: 80vw;
+height: 105vw;
   
     
 }

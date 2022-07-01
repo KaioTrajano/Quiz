@@ -290,11 +290,11 @@ let quizesdeprogramaçao = [
 
 {
     pergunta: "Para acessarmos um elemento através de seu ID, usamos:",
-    primeiraresposta: `document.getelementbyid('id_do_elemento');`,
-    segundaresposta: `getElementbyid('id_do_elemento');`,
-    terceiraresposta: `document.getElementById('id_do_elemento');`,
-    quartaresposta: `document.getIdElement('id_do_elemento');`, 
-    respostacerta: "document.getElementById('id_do_elemento');", 
+    primeiraresposta: `document.getelementbyid('id');`,
+    segundaresposta: `getElementbyid('id');`,
+    terceiraresposta: `document.getElementById('id');`,
+    quartaresposta: `document.getIdElement('id');`, 
+    respostacerta: "document.getElementById('id');", 
           
 },
 ]
@@ -393,12 +393,12 @@ let quizesconhecimentosgerais = [
 },
 
 {
-    pergunta: "Qual a velocidade da luz?",
-    primeiraresposta: `200 000 000 metros por segundo (m/s)`,
-    segundaresposta: `150 000 000 metros por segundo (m/s)`,
-    terceiraresposta: `299 792 458 metros por segundo (m/s)`,
-    quartaresposta: `199 792 458 metros por segundo (m/s)`, 
-    respostacerta: "299 792 458 metros por segundo (m/s)", 
+    pergunta: "Qual a velocidade da luz em metros por segundo?",
+    primeiraresposta: `200.000.000 (m/s)`,
+    segundaresposta: `150.000.000 (m/s)`,
+    terceiraresposta: `299.792.458 (m/s)`,
+    quartaresposta: `199.792.458 (m/s)`, 
+    respostacerta: "299.792.458 (m/s)", 
           
 },
 ]
@@ -482,7 +482,7 @@ let quizesmatematica = [
     segundaresposta: "R$ 127,60",
     terceiraresposta: "R$ 128,00",
     quartaresposta: "R$ 132,00", 
-    respostacerta: "134,40", 
+    respostacerta: "R$ 134,40", 
           
 },
 

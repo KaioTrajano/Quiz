@@ -583,7 +583,10 @@ function escolherquiz(){
     quadrodequizes.style.visibility = "visible"
     quadrodequizes.classList.add("quadrodequizesanimado")
     quadrodequizes.style.display = "grid"
-   
+    programingcheckbox.checked = false
+    medicinecheckbox.checked = false
+    conhecimentocheckbox.checked = false
+    matematicacheckbox.checked = false
     playername.classList.add("playernameoff")
 
 }

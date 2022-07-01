@@ -537,7 +537,7 @@ animation: nperguntasanimation 2s forwards;
  }
 
  footer{
-    width: 100%;
+    width: 80%;
     height: 100px;
     position: absolute;
     bottom: -120vh;

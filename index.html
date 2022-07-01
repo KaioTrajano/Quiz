@@ -9,16 +9,12 @@
     <title>Document</title>
 </head>
 
-<style>
-
-</style>
-
-<body>
+    <body>
 
 <div class="finishon" id="playername">
-    <h3>Digite seu nome</h3>
+    <h3>Bem vindo(a) &#128512</h3>
      <div class="roww">
-     <input id="playernameinput">
+     <input id="playernameinput" placeholder="Seu nome é">
      <button class="jogardenovo" id="começar"><i class="fa-solid fa-arrow-right"></i></button>
     </div>
 </div>  
@@ -26,21 +22,75 @@
 
 <div class="finishoff" id="finish">
   <p>Parabéns <span id="name"></span>, Quiz finalizado!</p>
+   
   <p class="pa">Perguntas acertadas</p>
+
   <p id="pts"></p>
-  <p class="n">Nivel de inteligência:</p>
+
+  <p class="pts">Nivel de Desempenho:</p>
   <p id="nivel"></p>
+  <button class="jogardenovo" id="voltarinicio">Voltar ao inicio</button>
   <button class="jogardenovo" id="jogardenovo">Jogar novamente</button>
 </div>
     
-
-
-
+<div class="barbox">
+    <span class="porcentagem" id="porcentagem"></span>
+</div>
 <div class="bardiv" id="bardiv">
  <div class="bar" id="bar">
-    <span class="porcentagem" id="porcentagem"></span>
  </div>
 </div>
+
+<div class="boxquizes">
+
+<h1 id="titulo"></h1>
+
+<div class="quadrodequizes" id="quadrodequizes">
+
+<div class="quizes">
+<img class="quizesimage" src="/_imagens/programingteste.png" alt="">
+<div><p class="titulo">Programação</p>
+    <p class="description">Teste seus conhecimentos em programação</p>
+    <button class="selectquiz" id="programingbutton">Iniciar Quiz</button>
+    <input type="checkbox" id="programingcheckbox">
+</div>
+
+</div>
+<div class="quizes">
+    <img class="quizesimage" src="/_imagens/medical-logo.jpg" alt="">
+    <div>
+        <p class="titulo">Medicina</p>
+        <p class="description">Sera que você leva jeito para medicina?</p>
+    <button class="selectquiz" id="medicine">Iniciar Quiz</button>
+     <input type="checkbox" id="medicinecheckbox">
+    </div>
+</div>
+<div class="quizes">
+    <img class="quizesimage" src="/_imagens/brain.jpg" alt="">
+    <div>
+        <p class="titulo">Conhecimentos gerais</p>
+    <p class="description">Você se considera um sabe tudo?</p>
+    <button class="selectquiz" id="conhecimento">Iniciar Quiz</button>
+    <input type="checkbox" id="conhecimentocheckbox">
+    </div>
+    
+</div>
+<div class="quizes">
+    <img class="quizesimage" src="/_imagens/math.jpg" alt="">
+    <div>
+        <p class="titulo">Matemática</p>
+    <p class="description">Você é bom em exatas? faça o teste</p>
+    <button class="selectquiz" id="matematicabutton">Iniciar Quiz</button>
+    <input type="checkbox" id="matematicacheckbox">
+    </div>
+</div>
+
+</div>
+
+</div>
+
+
+
 
 <div class="quadrodeperguntas" id="quadrodeperguntas">
 
@@ -49,10 +99,8 @@
         </div>
 
 <div id="pergunta">
- <h1>Quem descobriu o brasil?</h1>
+
 </div>
-
-
 
 
 <button class="resposta" id="resposta1" name="res" type="submit"></button>
@@ -68,7 +116,5 @@
 <footer>
 
 </footer>
-    
-<script src="https://kaiotrajano.github.io/Quiz/scripts.js"></script>
 
 </body>

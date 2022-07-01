@@ -546,7 +546,16 @@ animation: nperguntasanimation 2s forwards;
 
 
 @media (min-width:1600px){
+    
+.titulo{
+    font-size: 35px;
+    
+}
 
+.description{
+    font-size: 30px;
+}
+    
 .quadrodequizes{
 
 top: 120%;

@@ -36,7 +36,7 @@ footer{
 
 .resposta{
     margin-top: 15px;
-    width: 470px;
+    width: 460px;
     height: 61px;
     font-size: 23px;
     border-top: 4px solid rgb(5, 145, 238) ;
@@ -543,11 +543,12 @@ animation: nperguntasanimation 2s forwards;
     bottom: -120vh;
 }
 
+
 @media (min-width:1600px){
 
 .quadrodequizes{
 
-top: 160%;
+top: 190%;
 grid-template-columns: 550px 550px;
 gap: 100px;
 }
@@ -563,7 +564,7 @@ gap: 100px;
     left: 35%;
    
 }
-    
+
 footer{
     width: 80%;
     height: 100px;
@@ -594,6 +595,8 @@ footer{
     
     bottom: -280vh;
     
+}
+
 }
 
 @media(max-width: 794px){

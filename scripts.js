@@ -738,7 +738,7 @@ resposta3.innerText = quizesconhecimentosgerais[i].terceiraresposta
 resposta4.innerText = quizesconhecimentosgerais[i].quartaresposta
 }
 
-else{
+else if(matematicacheckbox.checked){
 pergunta.innerHTML = `<h1>${quizesmatematica[i].pergunta}</h1>`
 resposta1.innerText = quizesmatematica[i].primeiraresposta
 resposta2.innerHTML = quizesmatematica[i].segundaresposta

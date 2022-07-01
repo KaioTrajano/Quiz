@@ -543,6 +543,29 @@ animation: nperguntasanimation 2s forwards;
     bottom: -120vh;
 }
 
+@media (min-width:1600px){
+
+.quadrodequizes{
+
+top: 190%;
+grid-template-columns: 550px 550px;
+gap: 100px;
+}
+
+.quizes{
+    width: 550px;
+    height: 650px;
+ 
+}
+
+.selectquiz{
+   
+    left: 35%;
+   
+}
+
+}
+
 
 
 @media (max-width: 963px ){

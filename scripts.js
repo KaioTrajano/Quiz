@@ -483,14 +483,14 @@ let quizesmatematica = [
     segundaresposta: "R$ 127,60",
     terceiraresposta: "R$ 128,00",
     quartaresposta: "R$ 132,00", 
-    respostacerta: " 134,40", 
+    respostacerta: "134,40", 
           
 },
 
 {
     pergunta: "Durante uma viagem choveu 5 vezes. A chuva caia pela manhã ou à tarde, nunca o dia todo. Houve 6 manhãs e 3 tardes sem chuvas. Quantos dias durou a viagem?",
     primeiraresposta: "7",
-    segundaresposta: "8",
+    segundaresposta: "6",
     terceiraresposta: "8",
     quartaresposta: "9", 
     respostacerta: "7", 

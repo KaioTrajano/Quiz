@@ -488,22 +488,22 @@ let quizesmatematica = [
 },
 
 {
-    pergunta: "Geometria é a área da Matemática que trabalha com...",
-    primeiraresposta: "Tudo oque é forma geométrica",
-    segundaresposta: "monômios, binômios e polinômios",
-    terceiraresposta: "sólidos, superfícies, linhas, pontos ângulos e suas relações",
-    quartaresposta: "operações entre matrizes", 
-    respostacerta: "sólidos, superfícies, linhas, pontos ângulos e suas relações", 
+    pergunta: "Quantos zeros tem o número UM BILHÃO?",
+    primeiraresposta: "seis",
+    segundaresposta: "sete",
+    terceiraresposta: "oito",
+    quartaresposta: "nove", 
+    respostacerta: "nove", 
           
 },
 
 {
-    pergunta: "Uma inequação é uma...",
-    primeiraresposta: `equação que não possui letras`,
-    segundaresposta: `desigualdade entre duas expressões matemáticas`,
-    terceiraresposta: `igualdade entre duas expressões numéricas`,
-    quartaresposta: `equação que possui alguma variável`, 
-    respostacerta: "desigualdade entre duas expressões matemáticas", 
+    pergunta: "Hectare é uma unidade de área que equivale a...",
+    primeiraresposta: `100 metros quadrados`,
+    segundaresposta: `1000 metros quadradoss`,
+    terceiraresposta: `10.000 metros quadrados`,
+    quartaresposta: `5.000 metros quadrados`, 
+    respostacerta: "10.000 metros quadrados", 
           
 },
 ]

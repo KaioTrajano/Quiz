@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 body{
@@ -301,14 +300,13 @@ button{
 #playername input{
 padding: 15px;
 width: 70%;
-margin-top: 35px;
+margin-top: 0px;
 border: 2px solid black;
 font-weight: 600;
 font-size: 18px;
 border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
 justify-content: center;
-
 
 }
 
@@ -317,7 +315,7 @@ justify-content: center;
     }
 
 #começar{
-    margin-top: 35px;
+    margin-top: 0px;
     max-width: 80px;
     border: 2px solid black;
     border-top-right-radius: 5px;
@@ -542,6 +540,11 @@ animation: nperguntasanimation 2s forwards;
     height: 100px;
     position: absolute;
     bottom: -120vh;
+}
+
+#nameweb{
+    color: rgb(5, 125, 206);
+    font-size: 45px;
 }
 
 
@@ -805,6 +808,15 @@ footer{
 
 @media (max-width: 383px ){
 
+.quadrodequizes{
+    margin-top: 53pt;
+}
+
+    #nameweb{
+    color: rgb(5, 125, 206);
+    font-size: 35px;
+}
+
     #playername{
     width: 250px;
     height: 200px;
@@ -824,6 +836,9 @@ footer{
 
 @media (max-width: 330px ){
 
+    .quizes{
+        height: 400px;
+    }
 
     .resposta11{
         font-size: 9                                                                                                               px ;

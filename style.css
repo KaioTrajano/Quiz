@@ -587,8 +587,6 @@ grid-template-columns: 350px;
 gap: 50px;
 top: 150%;
 
-
-
 }
 
 footer{
@@ -600,8 +598,7 @@ footer{
 }
 
 @media(max-width: 794px){
-    
-}
+  
 
 #finish{
         width: 60%;
@@ -667,7 +664,7 @@ top: 120%;
 
     .resposta{
     margin-top: 15px;
-    width: 99%;
+    width: 90%;
     height: 61px;
     font-size: calc(0.55em + 1vmin);
     border-top: 4px solid rgb(5, 145, 238) ;

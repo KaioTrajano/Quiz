@@ -468,12 +468,12 @@ let quizesmatematica = [
 },
 
 {
-    pergunta: "Na sequência: 32, 64, 48, 96, 72, 144, 108, …, o primeiro termo que é um número ímpar é o",
-    primeiraresposta: `10° termo`,
-    segundaresposta: `11° termo`,
-    terceiraresposta: `9° termo`,
-    quartaresposta: `12° termo`, 
-    respostacerta: `11° termo`, 
+    pergunta: "Ângulo agudo é aquele que...",
+    primeiraresposta: `mede 90º`,
+    segundaresposta: `mede mais que 0º e menos que 90º`,
+    terceiraresposta: `mede 180º ou mais`,
+    quartaresposta: `mede 240º ou mais`, 
+    respostacerta: `mede mais que 0º e menos que 90º`, 
           
 },
 
@@ -488,22 +488,22 @@ let quizesmatematica = [
 },
 
 {
-    pergunta: "Durante uma viagem choveu 5 vezes. A chuva caia pela manhã ou à tarde, nunca o dia todo. Houve 6 manhãs e 3 tardes sem chuvas. Quantos dias durou a viagem?",
-    primeiraresposta: "7",
-    segundaresposta: "6",
-    terceiraresposta: "8",
-    quartaresposta: "9", 
-    respostacerta: "7", 
+    pergunta: "Geometria é a área da Matemática que trabalha com...",
+    primeiraresposta: "Tudo oque é forma geométrica",
+    segundaresposta: "monômios, binômios e polinômios",
+    terceiraresposta: "sólidos, superfícies, linhas, pontos ângulos e suas relações",
+    quartaresposta: "operações entre matrizes", 
+    respostacerta: "sólidos, superfícies, linhas, pontos ângulos e suas relações", 
           
 },
 
 {
-    pergunta: "Uma rede social está aumentando muito rápido o número de usuários e, recentemente, resolveu melhorar a segurança, protegendo os perfis de seus usuários. Até então, para criar uma conta era necessária uma senha com seis dígitos, utilizando os algarismos de 0 a 9 sem repetição. Agora, é preciso cadastrar no lugar do primeiro dígito, uma letra do alfabeto, incluindo y, w e k. A única restrição é que esta letra deve ser o primeiro dígito da senha.",
-    primeiraresposta: `937 440`,
-    segundaresposta: `21 600 000`,
-    terceiraresposta: `635 040`,
-    quartaresposta: `21`, 
-    respostacerta: "635 040", 
+    pergunta: "Uma inequação é uma...",
+    primeiraresposta: `equação que não possui letras`,
+    segundaresposta: `desigualdade entre duas expressões matemáticas`,
+    terceiraresposta: `igualdade entre duas expressões numéricas`,
+    quartaresposta: `equação que possui alguma variável`, 
+    respostacerta: "desigualdade entre duas expressões matemáticas", 
           
 },
 ]

@@ -587,8 +587,6 @@ footer{
 
 }
 
-
-
 @media (max-width: 963px ){
 
     #titulo{
@@ -597,8 +595,10 @@ footer{
 
 .quadrodequizes{
 
-margin-top: 50vmin;
+margin-top: 450px;
 grid-template-columns: 350px;
+gap: 50px;
+top: 150%;
 
 }
 
@@ -624,11 +624,6 @@ footer{
 
 @media (max-width: 499px ){
 
-.quizes:hover{
- transform: scale(1.0);
-}
-
-
 #titulo{
     font-size: 27px;
 }
@@ -641,6 +636,8 @@ footer{
 .quadrodequizes{
 
 grid-template-columns: 350px;
+gap: 50px;
+top: 120%;
 
 
 }
@@ -758,18 +755,23 @@ grid-template-columns: 350px;
 
 .quadrodequizes{
 
-grid-template-columns: 350px;
+grid-template-columns: 80vw;
+gap: 50px;
+top: 110%;
+
 
 }
 
-
+.selectquiz{
+   left: 24vw;
+   width: 30vw;
+   font-size: 4vw;
+}
 
 
 .quizes{
-width: 350px;
-
-padding-bottom: 5%;
-
+width: 80vw;
+height: 105vw;
   
     
 }
@@ -806,19 +808,8 @@ footer{
 
 @media (max-width: 383px ){
 
-    .selectquiz{
-   left: 70px;
-   
-   font-size: 4vw;
-}
-
 .quadrodequizes{
-    grid-template-columns: 300px;
-    margin-top: 250px;
-}
-
-.quizes{
-    width: 300px;
+    margin-top: 83pt;
 }
 
     #nameweb{
@@ -845,25 +836,8 @@ footer{
 
 @media (max-width: 330px ){
 
-    .selectquiz{
-   position: static;
-   margin-left: -10px;
-   margin-top: 15%;
-   text-align: center;
-   font-size: 4vw;
-}
-
-    .quadrodequizes{
-    grid-template-columns: 85vw;
-}
-
     .quizes{
-        width: 85vw;
-        
-    }
-
-    .description{
-        font-size: 15px;
+        height: 400px;
     }
 
     .resposta11{
@@ -876,3 +850,7 @@ footer{
 
 
 }
+
+
+
+

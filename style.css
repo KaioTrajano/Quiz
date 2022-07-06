@@ -490,14 +490,12 @@ animation: nperguntasanimation 2s forwards;
     width: 150px;
     position: absolute;
     bottom: 15px;
-    left: 100px;
+    left: 103px;
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
    border-radius: 0px;
   
-
-    
 }
 
 .selectquiz:hover{
@@ -623,6 +621,16 @@ footer{
 
 
 @media (max-width: 499px ){
+    
+.selectquiz{
+   
+   position: absolute;
+   left: 5%;
+   bottom: 2%;
+   width: 90%;
+   text-align: center;
+   font-size: 4vw;
+}
 
 #titulo{
     font-size: 27px;
@@ -760,12 +768,6 @@ gap: 50px;
 top: 110%;
 
 
-}
-
-.selectquiz{
-   left: 24vw;
-   width: 30vw;
-   font-size: 4vw;
 }
 
 

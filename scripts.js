@@ -787,19 +787,19 @@ function setstatus(){
         
 
         if(programingcheckbox.checked){
-        localStorage.setItem("status0", "Quiz completo")
+        localStorage.setItem("status0", "Quiz completo ✔")
         let status0 = localStorage.getItem("status1")
        document.getElementsByClassName("status")[0].innerText = status0
     }if(medicinecheckbox.checked){
-        localStorage.setItem("status1", "Quiz completo")
+        localStorage.setItem("status1", "Quiz completo ✔")
         let status1 = localStorage.getItem("status2")
         document.getElementsByClassName("status")[1].innerText = status1
     }else  if(conhecimentocheckbox.checked){
-        localStorage.setItem("status2", "Quiz completo")
+        localStorage.setItem("status2", "Quiz completo ✔")
         let status2 = localStorage.getItem("status3")
         document.getElementsByClassName("status")[2].innerText = status2
     }else  if(matematicacheckbox.checked){
-        localStorage.setItem("status3", "Quiz completo")
+        localStorage.setItem("status3", "Quiz completo ✔")
         let status3 = localStorage.getItem("status4")
         document.getElementsByClassName("status")[3].innerText = status3
     }

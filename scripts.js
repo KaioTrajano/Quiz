@@ -746,6 +746,7 @@ npergunta.innerText = i+1
 
 function finishevent(){
 
+setstatus()
 
 if(pts <= 4){
 
@@ -775,7 +776,6 @@ pontos.innerText = `${pts}/10`
 
 nivel.innerText += 
 
-setstatus()
 resetgame()
 
 }

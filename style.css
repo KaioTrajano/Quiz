@@ -548,6 +548,7 @@ animation: nperguntasanimation 2s forwards;
 .status{
     color: rgb(135, 211, 22);
     font-weight: 600;
+    
 }
 
 
@@ -651,6 +652,7 @@ footer{
 grid-template-columns: 350px;
 gap: 50px;
 top: 90%;
+margin-top: 250px;
 
 
 }
@@ -770,10 +772,12 @@ top: 90%;
 
 grid-template-columns: 80vw;
 gap: 50px;
-top: 90%;
+margin-top: 200px;
 
 
 }
+
+
 
 
 .quizes{
@@ -815,8 +819,12 @@ footer{
 
 @media (max-width: 383px ){
 
+.description{
+    font-size: 13px;
+}
+
 .quadrodequizes{
-    margin-top: 400px;
+    margin-top: 150px;
 }
 
     #nameweb{
@@ -857,7 +865,3 @@ footer{
 
 
 }
-
-
-
-

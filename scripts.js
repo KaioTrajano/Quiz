@@ -27,6 +27,9 @@ let matematicabutton = document.getElementById("matematicabutton")
 let inicio = document.getElementById("voltarinicio")
 let titulo = document.getElementById("titulo")
 
+
+
+
 quadrodeperguntas.style.display = "none"
 
 playernameinp.focus()
@@ -37,6 +40,8 @@ jogardenovo.addEventListener("click", jogarnovamente)
 inicio.addEventListener("click", () =>{
     
     escolherquiz()
+    
+    
 
 })
 
@@ -467,7 +472,7 @@ let quizesmatematica = [
 },
 
 {
-     pergunta: "Ângulo agudo é aquele que...",
+    pergunta: "Ângulo agudo é aquele que...",
     primeiraresposta: `mede 90º`,
     segundaresposta: `mede mais que 0º e menos que 90º`,
     terceiraresposta: `mede 180º ou mais`,
@@ -487,7 +492,7 @@ let quizesmatematica = [
 },
 
 {
-   pergunta: "Quantos zeros tem o número UM BILHÃO?",
+    pergunta: "Quantos zeros tem o número UM BILHÃO?",
     primeiraresposta: "seis",
     segundaresposta: "sete",
     terceiraresposta: "oito",
@@ -502,7 +507,7 @@ let quizesmatematica = [
     segundaresposta: `1000 metros quadradoss`,
     terceiraresposta: `10.000 metros quadrados`,
     quartaresposta: `5.000 metros quadrados`, 
-    respostacerta: "10.000 metros quadrados", 
+    respostacerta: "10.000 metros quadrados",  
           
 },
 ]
@@ -559,6 +564,10 @@ resposta4.addEventListener("click", () =>{
 
 function escolherquiz(){
 
+    getstatus()
+   
+    quadrodequizes.style.top = "150%"
+
     if(playernameinp.value ==""){
         playernameinp.classList.add("your-class")
           playernameinp.placeholder = "Digite um nome"
@@ -580,13 +589,14 @@ function escolherquiz(){
 
     finish.classList.remove("finishon")
 
-    quadrodequizes.style.visibility = "visible"
-    quadrodequizes.classList.add("quadrodequizesanimado")
-    quadrodequizes.style.display = "grid"
     programingcheckbox.checked = false
     medicinecheckbox.checked = false
     conhecimentocheckbox.checked = false
     matematicacheckbox.checked = false
+    quadrodequizes.style.visibility = "visible"
+    quadrodequizes.classList.add("quadrodequizesanimado")
+    quadrodequizes.style.display = "grid"
+   
     playername.classList.add("playernameoff")
 
 }
@@ -677,6 +687,8 @@ createtamplate()
 
 function resetgame(){
 
+quadrodequizes.style.top = "0%"
+
 setTimeout(() =>{
     porcentagem.style.display = "block"
 },480)
@@ -714,6 +726,7 @@ resposta1.innerText = tipo[i].primeiraresposta
 resposta2.innerHTML = tipo[i].segundaresposta
 resposta3.innerText = tipo[i].terceiraresposta
 resposta4.innerText = tipo[i].quartaresposta
+
 }
 
 
@@ -762,6 +775,51 @@ pontos.innerText = `${pts}/10`
 
 nivel.innerText += 
 
+setstatus()
 resetgame()
 
 }
+
+function setstatus(){
+
+    if(i==10){
+        
+        
+
+        if(programingcheckbox.checked){
+        localStorage.setItem("status0", "Completo")
+        let status0 = localStorage.getItem("status1")
+       document.getElementsByClassName("status")[0].innerText = status0
+    }if(medicinecheckbox.checked){
+        localStorage.setItem("status1", "Completo")
+        let status1 = localStorage.getItem("status2")
+        document.getElementsByClassName("status")[1].innerText = status1
+    }else  if(conhecimentocheckbox.checked){
+        localStorage.setItem("status2", "Completo")
+        let status2 = localStorage.getItem("status3")
+        document.getElementsByClassName("status")[2].innerText = status2
+    }else  if(matematicacheckbox.checked){
+        localStorage.setItem("status3", "Completo")
+        let status3 = localStorage.getItem("status4")
+        document.getElementsByClassName("status")[3].innerText = status3
+    }
+        
+    }
+    
+
+    
+}
+
+function getstatus(){
+
+for(i=0;i<=3;i++){
+
+let statusgeral = localStorage.getItem(`status${[i]}`)
+
+document.getElementsByClassName("status")[i].innerText = statusgeral
+
+
+}
+
+}
+

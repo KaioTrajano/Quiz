@@ -627,6 +627,10 @@ footer{
 
 
 @media (max-width: 499px ){
+  .quizes:hover{
+  transform: scale(1.0);
+}
+    
     
 .selectquiz{
    

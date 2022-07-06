@@ -545,6 +545,11 @@ animation: nperguntasanimation 2s forwards;
     font-size: 45px;
 }
 
+.status{
+    color: rgb(135, 211, 22);
+    font-weight: 600;
+}
+
 
 @media (min-width:1600px){
     

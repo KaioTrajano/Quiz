@@ -538,6 +538,7 @@ animation: nperguntasanimation 2s forwards;
     height: 100px;
     position: absolute;
     bottom: -120vh;
+    display: none;
 }
 
 #nameweb{

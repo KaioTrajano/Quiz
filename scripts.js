@@ -1,3 +1,4 @@
+
 let perguntas = document.getElementById("pergunta")
 let resposta1 = document.getElementById("resposta1")
 let resposta2 = document.getElementById("resposta2")
@@ -615,18 +616,20 @@ quadrodequizes.classList.remove("quadrodequizesanimado")
 quadrodequizes.classList.add("playernameoff")
 quadrodequizes.style.visibility = "hidden"
 
-bar.setAttribute("style", "width: 0%")
 progresso = 0
+bar.setAttribute("style", "width: 0%")
+
 
 if(playernameinp.value ==""){
     playernameinp.placehoder = ""
     return
 }
 
-porcentagem.style.visibility = "visible"
+
 
 setTimeout(() => {
     bardiv.style.visibility = "visible"
+    porcentagem.style.visibility = "visible"
 }, 800);
 
 playername.classList.add("playernameoff")
@@ -833,11 +836,5 @@ let getstatus = document.getElementsByClassName("status")[i].innerText = statusg
 
 
 }
-
-
-
-
-
-
 
 }

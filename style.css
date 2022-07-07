@@ -276,6 +276,9 @@ button{
     height: 250px;
     position: absolute;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 50%;
    
 }
@@ -299,10 +302,11 @@ button{
     flex-direction: row;
     width: 80%;
     height: 50px;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 35px;
+
 }
 
 
@@ -539,6 +543,7 @@ animation: nperguntasanimation 2s forwards;
 
  #titulo{
     font-size: 4vw;
+    margin-top: 10%;
     
  }
 
@@ -558,6 +563,8 @@ animation: nperguntasanimation 2s forwards;
 .status{
     color: rgb(135, 211, 22);
     font-weight: 600;
+   position: relative;
+   top: 20px;
 
     
 }
@@ -878,21 +885,17 @@ footer{
     margin-top: 200px;
 }
 
+
     #nameweb{
     color: rgb(5, 125, 206);
     font-size: 35px;
 }
 
     #playername{
-    width: 250px;
+    width: 90%;
     height: 200px;
     font-size: 18px;
 }
-
-#playername input{
-    margin-left: -18px;
-}
-
 
     .resposta11{
         font-size: 10px ;
@@ -901,7 +904,16 @@ footer{
 }
 
 @media (max-width: 330px ){
+    ::-webkit-input-placeholder { /* Edge */
+  font-size: 80%;
+}
 
+.status{
+  
+   top: 0px;
+
+    
+}
     .quizes{
         height: 400px;
     }
@@ -916,5 +928,3 @@ footer{
 
 
 }
-
-

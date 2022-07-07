@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 
@@ -367,12 +366,15 @@ justify-content: center;
 
 
 .bardiv{
+    position: absolute;
     height: 10px;
     width: 50%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     background-color: rgb(5, 125, 206);
     border-radius: 25px;
     margin: auto;
-    margin-top: 50px;
     visibility: hidden;
     overflow: hidden;
    
@@ -428,7 +430,8 @@ justify-content: center;
 .porcentagem{
  font-weight: 600;
  color: white;
- margin-top: 100px;
+ position: absolute;
+ top: 65px;
  text-shadow: 1px 1px black;
  font-size: 22px;
  display: none;
@@ -505,6 +508,7 @@ animation: nperguntasanimation 2s forwards;
     font-weight: 600;
     margin-bottom: 5px;
     padding-top: 10px;
+    
 
 }
 
@@ -562,7 +566,7 @@ animation: nperguntasanimation 2s forwards;
 
  #titulo{
     font-size: 4vw;
-    margin-top: 10%;
+    margin-top: 20%;
     
  }
 
@@ -701,9 +705,9 @@ footer{
 .selectquiz{
    
    position: absolute;
-   left: 2.8%;
+   left: 10%;
    bottom: 2%;
-   width: 95%;
+   width: 80%;
    text-align: center;
    font-size: 4vw;
 }

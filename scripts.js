@@ -4,10 +4,10 @@ let resposta2 = document.getElementById("resposta2")
 let resposta3 = document.getElementById("resposta3")
 let resposta4 = document.getElementById("resposta4")
 let respostas = document.getElementsByName("res")
-let finish = document.getElementById("finish")
-let jogardenovo = document.getElementById("jogardenovo")
+const finish = document.getElementById("finish")
+const jogardenovo = document.getElementById("jogardenovo")
 let pontos = document.getElementById("pts")
-let quadrodeperguntas = document.getElementById("quadrodeperguntas")
+const quadrodeperguntas = document.getElementById("quadrodeperguntas")
 let npergunta = document.getElementById("npergunta")
 let nivel = document.getElementById("nivel")
 let playername = document.getElementById("playername")
@@ -18,12 +18,12 @@ let bar = document.getElementById("bar")
 let bardiv = document.getElementById("bardiv")
 let porcentagem = document.getElementById("porcentagem")
 let quadrodequizes = document.getElementById("quadrodequizes")
-let medicinebutton = document.getElementById("medicine")
-let conhecimentobutton = document.getElementById("conhecimento")
+const medicinebutton = document.getElementById("medicine")
+const conhecimentobutton = document.getElementById("conhecimento")
 let medicinecheckbox = document.getElementById("medicinecheckbox")
 let conhecimentocheckbox = document.getElementById("conhecimentocheckbox")
 let matematicacheckbox = document.getElementById("matematicacheckbox")
-let matematicabutton = document.getElementById("matematicabutton")
+const matematicabutton = document.getElementById("matematicabutton")
 let inicio = document.getElementById("voltarinicio")
 let titulo = document.getElementById("titulo")
 
@@ -46,7 +46,7 @@ inicio.addEventListener("click", () =>{
 })
 
 let programingcheckbox = document.getElementById("programingcheckbox")
-let programingbutton = document.getElementById("programingbutton")
+const programingbutton = document.getElementById("programingbutton")
 
 programingbutton.addEventListener("click", () =>{
     programingcheckbox.checked = true
@@ -564,6 +564,8 @@ resposta4.addEventListener("click", () =>{
 
 function escolherquiz(){
 
+    
+
     getstatus()
    
     quadrodequizes.style.top = "150%"
@@ -616,7 +618,10 @@ if(playernameinp.value ==""){
 }
 
 porcentagem.style.visibility = "visible"
-bardiv.style.visibility = "visible"
+
+setTimeout(() => {
+    bardiv.style.visibility = "visible"
+}, 800);
 
 playername.classList.add("playernameoff")
 
@@ -746,7 +751,7 @@ npergunta.innerText = i+1
 
 function finishevent(){
 
-setstatus()
+    setstatus()
 
 if(pts <= 4){
 
@@ -776,7 +781,9 @@ pontos.innerText = `${pts}/10`
 
 nivel.innerText += 
 
+
 resetgame()
+
 
 }
 
@@ -788,19 +795,19 @@ function setstatus(){
 
         if(programingcheckbox.checked){
         localStorage.setItem("status0", "Quiz completo ✔")
-        let status0 = localStorage.getItem("status1")
+        let status0 = localStorage.getItem("status0")
        document.getElementsByClassName("status")[0].innerText = status0
     }if(medicinecheckbox.checked){
         localStorage.setItem("status1", "Quiz completo ✔")
-        let status1 = localStorage.getItem("status2")
+        let status1 = localStorage.getItem("status1")
         document.getElementsByClassName("status")[1].innerText = status1
     }else  if(conhecimentocheckbox.checked){
         localStorage.setItem("status2", "Quiz completo ✔")
-        let status2 = localStorage.getItem("status3")
+        let status2 = localStorage.getItem("status2")
         document.getElementsByClassName("status")[2].innerText = status2
     }else  if(matematicacheckbox.checked){
         localStorage.setItem("status3", "Quiz completo ✔")
-        let status3 = localStorage.getItem("status4")
+        let status3 = localStorage.getItem("status3")
         document.getElementsByClassName("status")[3].innerText = status3
     }
         
@@ -816,10 +823,15 @@ for(i=0;i<=3;i++){
 
 let statusgeral = localStorage.getItem(`status${[i]}`)
 
-document.getElementsByClassName("status")[i].innerText = statusgeral
+let getstatus = document.getElementsByClassName("status")[i].innerText = statusgeral
 
 
 }
 
-}
 
+
+
+
+
+
+}

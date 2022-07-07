@@ -608,7 +608,7 @@ nav{
     height: 50px;
     width: 100%;
     top: 0;
-    box-shadow: 1px 1px 15px rgba(129, 129, 129, 0.315);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.315);
     z-index: 2;
   
     

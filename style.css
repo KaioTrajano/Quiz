@@ -256,7 +256,8 @@ button{
     border-bottom:rgb(3, 90, 148) 6px solid ;  
 }
 
-.jogardenovo:hover{
+
+.jogardenovo{
     background-color:rgb(4, 114, 187) 
 }
 
@@ -598,6 +599,7 @@ animation: nperguntasanimation 2s forwards;
     left: 20px;
     font-weight: bolder;
     color: white;
+    cursor: pointer;
    
 
 }
@@ -864,7 +866,7 @@ height: 105vw;
   
 .resposta{
 margin-top: 15px;
-width: 98%;
+width: 90%;
 height: 61px;
 border-top: 4px solid rgb(5, 145, 238) ;
 background-color: white;

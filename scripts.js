@@ -68,6 +68,10 @@ matematicabutton.addEventListener("click", () =>{
     jogarnovamente()
 })
 
+let mark = document.querySelector(".mark")
+
+mark.addEventListener("click", escolherquiz)
+
 começar.addEventListener("click", escolherquiz)
 
 function createtamplate(){
@@ -518,6 +522,7 @@ let progresso = 0
 function verificarresposta(resposta, letra){
 
 quadrodeperguntas.style.pointerEvents = "none"
+mark.style.pointerEvents = "none"
 
 if(resposta.textContent == quizes[i].respostacerta + `${letra}` || 
 resposta.textContent == quizesconhecimentosgerais[i].respostacerta + `${letra}` || 
@@ -562,10 +567,11 @@ resposta4.addEventListener("click", () =>{
 
 })
 
+
+
 function escolherquiz(){
-
-    
-
+    quadrodeperguntas.style.display = "none"
+    bardiv.style.visibility = "hidden"
     getstatus()
    
     quadrodequizes.style.top = "150%"
@@ -581,7 +587,7 @@ function escolherquiz(){
     return
 }
 
-    bardiv.style.visibility = "hidden"
+    
     porcentagem.style.visibility = "hidden"
 
     titulo.style.display = "block"
@@ -745,7 +751,7 @@ titulo.style.display = "none"
 quadrodeperguntas.classList.remove("shakeerror")
 quadrodeperguntas.classList.remove("reset")
 npergunta.innerText = i+1
-
+mark.style.pointerEvents = "all"
 
 }
 

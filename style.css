@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/95442199ab.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+
+<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 
@@ -197,7 +210,7 @@ footer{
     background-color: white;
     position: absolute;
     display: block;
-    top: 90%;  /* position the top  edge of the element at the middle of the parent */
+    top: 150%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
     box-shadow: 1px 1px 25px rgb(54, 54, 54);
@@ -405,12 +418,29 @@ justify-content: center;
         min-width: auto;
         font-size: 25px;
         height: auto;
-        padding: 5px;
+        margin-top: 50px;
+        
     }
+
+#finish p{
+    margin-top: 15px;
+}
+
+#voltarinicio{
+    margin-top: 25px;
+}
+
+.quizes:nth-child(4){
+
+    margin-bottom: 150px;
+}
+
+
 
 .porcentagem{
  font-weight: 600;
  color: white;
+ margin-top: 100px;
  text-shadow: 1px 1px black;
  font-size: 22px;
  display: none;
@@ -514,6 +544,7 @@ animation: nperguntasanimation 2s forwards;
 .selectquiz:hover{
     background-color: rgb(5, 125, 206);
     color: white;
+    transition: .2s;
 }
 
 .quizesimage{
@@ -908,12 +939,6 @@ footer{
   font-size: 80%;
 }
 
-.status{
-  
-   top: 0px;
-
-    
-}
     .quizes{
         height: 400px;
     }

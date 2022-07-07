@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+
+*{
+    padding:0;
+margin:0;
+vertical-align:baseline;
+list-style:none;
+border:0
+}
+
 body{
     background-color: #439CEF;
     user-select: none;
@@ -494,7 +503,7 @@ animation: nperguntasanimation 2s forwards;
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
-   border-radius: 0px;
+   border-radius: 5px;
   
 }
 
@@ -549,9 +558,33 @@ animation: nperguntasanimation 2s forwards;
 .status{
     color: rgb(135, 211, 22);
     font-weight: 600;
+
     
 }
 
+.mark{
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    font-weight: bolder;
+    color: white;
+   
+
+}
+
+nav{
+    position: fixed;
+    background-color:#439CEF; ;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    box-shadow: 1px 1px 15px rgba(129, 129, 129, 0.315);
+    z-index: 2;
+  
+    
+
+
+}
 
 @media (min-width:1600px){
     
@@ -560,8 +593,12 @@ animation: nperguntasanimation 2s forwards;
     
 }
 
+.status{
+    font-size: 40px;
+}
+
 .description{
-    font-size: 30px;
+    font-size: 25px;
 }
     
 .quadrodequizes{
@@ -589,6 +626,8 @@ footer{
     position: absolute;
     bottom: -220vh;
 }
+
+
 
 }
 
@@ -628,17 +667,17 @@ footer{
 
 
 @media (max-width: 499px ){
+
   .quizes:hover{
   transform: scale(1.0);
 }
     
-    
 .selectquiz{
    
    position: absolute;
-   left: 5%;
+   left: 2.8%;
    bottom: 2%;
-   width: 90%;
+   width: 95%;
    text-align: center;
    font-size: 4vw;
 }
@@ -824,12 +863,19 @@ footer{
 
 @media (max-width: 383px ){
 
+    .quizes{
+  
+    height: 115vw;
+  
+    
+}
+
 .description{
     font-size: 13px;
 }
 
 .quadrodequizes{
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
     #nameweb{
@@ -870,3 +916,5 @@ footer{
 
 
 }
+
+

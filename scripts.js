@@ -1,3 +1,4 @@
+function game(){
 
 let perguntas = document.getElementById("pergunta")
 let resposta1 = document.getElementById("resposta1")
@@ -572,7 +573,7 @@ resposta4.addEventListener("click", () =>{
 
 function escolherquiz(){
     quadrodeperguntas.style.display = "none"
-    bardiv.style.visibility = "hidden"
+    bardiv.style.display = "none"
     getstatus()
    
     quadrodequizes.style.top = "150%"
@@ -628,7 +629,7 @@ if(playernameinp.value ==""){
 
 
 setTimeout(() => {
-    bardiv.style.visibility = "visible"
+    bardiv.style.display = "block"
     porcentagem.style.visibility = "visible"
 }, 800);
 
@@ -838,3 +839,7 @@ let getstatus = document.getElementsByClassName("status")[i].innerText = statusg
 }
 
 }
+
+}
+
+game()

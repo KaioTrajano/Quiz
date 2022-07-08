@@ -57,10 +57,12 @@ footer{
    border: none;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 1px 0px 15px 2px #0836C1;
+   
+
     
     
 }
+
 
 .resposta span{
     font-weight: bolder;
@@ -141,8 +143,11 @@ footer{
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     padding: 14.5px;
-    background-color: rgb(242, 243, 155);
+    background-color: #7FCDCD;
+   
 }
+
+
 
 .alternative2{
     float: left;
@@ -154,6 +159,8 @@ footer{
     background-color: rgb(172, 92, 247);
 }
 
+
+
 .alternative3{
     float: left;
     margin-left: -16px;
@@ -161,8 +168,10 @@ footer{
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     padding: 14.5px;
-    background-color:rgb(137, 253, 253);
+    background-color:#EFC050;
 }
+
+
 
 .alternative4{
     float: left;
@@ -171,8 +180,10 @@ footer{
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     padding: 14.5px;
-    background-color: rgb(255, 159, 255);
+    background-color:  #C3447A;
 }
+
+
 
 .finishoff{
     width: 400px;
@@ -370,13 +381,13 @@ justify-content: center;
     position: absolute;
     height: 10px;
     width: 50%;
-    top: 15%;
+    top: 110px;
     left: 50%;
     transform: translate(-50%, -50%); 
     background-color: rgb(5, 125, 206);
     border-radius: 25px;
     margin: auto;
-    visibility: hidden;
+    display: none;
     overflow: hidden;
    
 }
@@ -600,10 +611,10 @@ animation: nperguntasanimation 2s forwards;
     font-weight: bolder;
     color: white;
     cursor: pointer;
-   
-
+    
+    
 }
-
+   
 nav{
     position: fixed;
     background-color:#439CEF; ;
@@ -663,6 +674,72 @@ footer{
 
 }
 
+@media (min-width: 900px){
+
+    #resposta1{
+    box-shadow: inset 0 0 0 0  #7FCDCD;;
+    -webkit-transition: ease-out 0.1s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+
+#resposta1:hover{
+   
+    transition: .6s;
+    box-shadow: inset 500px 0 0 0   #7FCDCD;
+    
+
+}
+
+#resposta2{
+    box-shadow: inset 0 0 0 0  rgb(172, 92, 247);;
+    -webkit-transition: ease-out 0.1s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+
+#resposta2:hover{
+   
+    transition: .6s;
+    box-shadow: inset 500px 0 0 0   rgb(172, 92, 247);
+    
+
+}
+
+#resposta3{
+    box-shadow: inset 0 0 0 0  #EFC050;;;
+    -webkit-transition: ease-out 0.1s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+
+#resposta3:hover{
+   
+    transition: .6s;
+    box-shadow: inset 500px 0 0 0   #EFC050;;
+    
+
+}
+
+#resposta4{
+    box-shadow: inset 0 0 0 0  #C3447A;
+    -webkit-transition: ease-out 0.1s;
+  -moz-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+  margin-bottom: 100px;
+}
+
+#resposta4:hover{
+   
+    transition: .6s;
+    box-shadow: inset 500px 0 0 0   #C3447A;
+    
+
+}
+
+
+}
+
 @media (max-width: 963px ){
 
     #titulo{
@@ -687,7 +764,8 @@ footer{
 }
 
 @media(max-width: 794px){
-  
+
+ 
     #titulo{
     font-size: 7vw;
     margin-top: 20%;
@@ -704,6 +782,10 @@ footer{
 
 
 @media (max-width: 499px ){
+
+#pergunta{
+    font-size: 8px;
+}
 
   .quizes:hover{
   transform: scale(1.0);

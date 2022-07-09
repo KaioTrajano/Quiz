@@ -269,8 +269,8 @@ button{
 }
 
 
-.jogardenovo{
-    background-color:rgb(4, 114, 187) 
+.jogardenovo:hover{
+    background-color:rgb(6, 125, 204);
 }
 
 #finish .jogardenovo{

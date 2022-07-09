@@ -625,9 +625,12 @@ nav{
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.315);
     z-index: 2;
   
-    
+}
 
-
+.fa-arrow-rotate-left, .fa-house{
+margin-left: 5px;
+font-size: 20px;
+font-weight: 600;
 }
 
 @media (min-width:1600px){

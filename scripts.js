@@ -39,13 +39,17 @@ playernameinp.click()
 
 jogardenovo.addEventListener("click", jogarnovamente)
 
-inicio.addEventListener("click", () =>{
+inicio.addEventListener("click", () =>escolherquiz())
     
-    escolherquiz()
-    
-    
+playernameinp.addEventListener("keypress", event =>{
 
-})
+  if (event.key === "Enter") {
+ 
+    event.preventDefault();
+ 
+    inicio.click();
+  }
+});
 
 let programingcheckbox = document.getElementById("programingcheckbox")
 const programingbutton = document.getElementById("programingbutton")

@@ -18,6 +18,17 @@ body{
   
    
 }
+
+nav a{
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
   
 
 footer{
